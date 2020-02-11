@@ -18,15 +18,15 @@ const config = {
     ssl: true // Enable ssl connection, make sure the port is 5671 or an other ssl port
 }
 
-this.rabbitServer = new Connection(config)
+const rabbitServer = new Connection(config)
 
-this.rabbitServer.on('error', (event) => {
+rabbitServer.on('error', (event) => {
     console.log('eventoErro', event)
 })
 
-this.rabbitServer.on('connected', (event) => {
+rabbitServer.on('connected', (event) => {
 
-    let queue = new Queue(this.rabbitServer, {
+    let queue = new Queue(rabbitServer, {
         name: '',
         passive: false,
         durable: false,
