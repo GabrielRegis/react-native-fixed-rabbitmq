@@ -1,0 +1,36 @@
+{
+  "author": {
+    "name": "Tim Honders and Gabriel Regis"
+  },
+  "bugs": {
+    "url": "https://github.com/kegaretail/react-native-rabbitmq/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "A RabbitMq component for React Native, with Android's single event receive bug fix and iOS Compilation Fix.",
+  "devDependencies": {},
+  "directories": {},
+  "keywords": [
+    "react-native",
+    "react",
+    "RabbitMq"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "timhonders",
+      "email": "tim.honders@kega.nl"
+    },
+    {
+      "name": "gabrielbregis",
+      "email": "gabrielbregis@gmail.com"
+    }
+  ],
+  "name": "react-native-fixed-rabbitmq",
+  "nativePackage": true,
+  "optionalDependencies": {},
+  "scripts": {},
+  "version": "1.0.0"
+}
