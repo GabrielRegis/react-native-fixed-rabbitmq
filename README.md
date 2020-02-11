@@ -1,82 +1,10 @@
-## Todo
+
 
 ## Installation
 
 ## IOS
 
-npm install react-native-rabbitmq --save
-
- Installation with CocoaPods
-
-1. In the Podfile uncomment "use_frameworks" (Optional):
-
-```
-use_frameworks!
-```
-2. Add the following to your Podfile, use master because needed fix is not a tag:
-
-```
-pod 'react-native-rabbitmq', :path => '../node_modules/react-native-rabbitmq'
-pod 'RMQClient', :git => 'https://github.com/rabbitmq/rabbitmq-objc-client.git'
-```
-3. Install the cocapods:
-
-```
-pod install
-```
-
-
-
-In xcode add a recursive Header Search Path:
-```
-$(SRCROOT)/Pods
-```
-
-
-You need to change some things, to make it work:
-
-ios\Pods\RMQClient\RMQClient\RMQValues.h Line 53
-```
-@import JKVValue;
-```
-to
-```
-#import "JKVValue.h"
-```
-
-ios\Pods\JKVValue\JKVValue\Public\JKVValue.h
-```
-#import <JKVValue/JKVValueImpl.h>
-#import <JKVValue/JKVMutableValue.h>
-#import <JKVValue/JKVObjectPrinter.h>
-#import <JKVValue/JKVFactory.h>
-```
-to
-```
-#import "JKVValueImpl.h"
-#import "JKVMutableValue.h"
-#import "JKVObjectPrinter.h"
-#import "JKVFactory.h"
-```
-
-ios\Pods\RMQClient\RMQClient\RMQTCPSocketTransport.h
-```
-@import CocoaAsyncSocket;
-```
-to
-```
-#import "GCDAsyncSocket.h"
-```
-
-react-native link
-
-
-## Android
-
-npm install react-native-rabbitmq --save
-
-react-native link
-
+yarn add react-native-fixed-rabbitmq
 
 ## Usage
 ```
