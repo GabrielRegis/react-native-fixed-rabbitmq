@@ -3,7 +3,7 @@
     "name": "Tim Honders and Gabriel Regis"
   },
   "bugs": {
-    "url": "https://github.com/kegaretail/react-native-rabbitmq/issues"
+    "url": "https://github.com/GabrielRegis/react-native-fixed-rabbitmq/issues"
   },
   "bundleDependencies": false,
   "dependencies": {},
@@ -31,6 +31,10 @@
   "name": "react-native-fixed-rabbitmq",
   "nativePackage": true,
   "optionalDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabrielRegis/react-native-fixed-rabbitmq.git"
+  },
   "scripts": {},
   "version": "1.0.0"
 }
