@@ -19,5 +19,5 @@ Pod::Spec.new do |s|
   s.source_files   = 'iOS/RCTReactNativeRabbitMq/*.{h,m}'
 
   s.dependency 'React'
-  s.dependency 'RMQClient'
+  s.dependency 'RMQClient', '~> 0.11.0-rc2'
 end
