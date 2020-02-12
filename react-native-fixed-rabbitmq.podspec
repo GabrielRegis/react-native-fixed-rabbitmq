@@ -10,14 +10,14 @@ Pod::Spec.new do |s|
   s.license        = package['license']
   s.author         = package['author']
   s.homepage       = package['homepage']
-  s.source         = { :git => 'https://github.com/rabbitmq/rabbitmq-objc-client.git', :branch => 'master' }
+  s.source         = { :git => 'https://github.com/rabbitmq/rabbitmq-objc-client.git' }
 
   s.requires_arc   = true
-  s.platform       = :ios, '10.0'
+  s.platform       = :ios, '7.0'
 
   s.preserve_paths = 'README.md', 'package.json', 'index.js'
   s.source_files   = 'iOS/RCTReactNativeRabbitMq/*.{h,m}'
 
   s.dependency 'React'
-  s.dependency 'RMQClient', '~> 0.11.0-rc2'
+  s.dependency 'RMQClient'
 end
