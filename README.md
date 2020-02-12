@@ -3,7 +3,9 @@
 ## Installation
 
 yarn add react-native-fixed-rabbitmq
+
 cd ios
+
 pod install
 
 ## Usage
